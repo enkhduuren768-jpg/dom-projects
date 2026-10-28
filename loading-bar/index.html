@@ -1,13 +1,110 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Loading · Forma</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="index.js" defer></script>
   </head>
 
-  <body>
-    Loading bar
+  <body
+    class="min-h-screen min-w-[1000px] bg-[#190b10] font-sans text-[#fff5ee]"
+  >
+    <div class="mx-auto flex min-h-screen w-[920px] flex-col">
+      <header
+        class="flex h-24 shrink-0 items-center justify-between border-b border-[#ff9299]/10"
+      >
+        <nav>
+          <a
+            href="../index.html"
+            class="inline-flex items-center gap-2 rounded-full border border-[#ff9299]/15 bg-white/5 px-4 py-2.5 text-xs font-medium text-[#ff9299] transition-colors hover:border-[#ff9299]/35 hover:bg-[#ff9299]/10 hover:text-[#fff5ee] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#ff9299] motion-reduce:transition-none"
+          >
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M19 12H5m7-7-7 7 7 7" />
+            </svg>
+            Back to projects
+          </a>
+        </nav>
+        <span
+          class="text-[10px] font-medium uppercase tracking-[2.5px] text-[#ff9299]/65"
+          >The everyday collection / 01</span
+        >
+      </header>
+
+      <div class="flex flex-1 items-center justify-center py-10 flex-col gap-6">
+        <div class="text-[#C4A2AB] text-[10px] tracking-[3px]">
+          — LET’S GET YOU STARTED —
+        </div>
+        <div
+          class="overflow-hidden w-[720px] h-[456px] bg-[#260F17] border border-[#46232E] items-center rounded-3xl"
+        >
+          <div class="px-12 pt-10">
+            <div
+              class="w -[624px] h-[28px] flex justify-between text-[10px] tracking-[1.5px]"
+            >
+              <div class="text-[#FF9299]">GETTING READY</div>
+              <div class="text-[#C4A2AB]">01 — 03</div>
+            </div>
+            <div class="text-[#FFF5EE] text-[40px]">
+              Something good is coming.
+            </div>
+            <div class="text-[#C4A2AB] text-[15px]">
+              A little preparation for a great beginning.
+            </div>
+            <div
+              class="w-[624px] h-[112px] flex justify-between items-center m-[24px]"
+            >
+              <div class="flex">
+                <div
+                  id="counter"
+                  class="min-w-[138px] text-[#FFF5EE] text-[112px]"
+                >
+                  64
+                </div>
+                <span class="text-[38px] text-[#FF6470] pt-20">%</span>
+              </div>
+              <div id="message" class="text-[#C4A2AB] text-[14px]">
+                Bringing everything together
+              </div>
+            </div>
+          </div>
+          <div class="pl-[48px] pt-[12px]">
+            <div class="bg-[#46232E] w-[624px] h-[12px] rounded-3xl m-[12px]">
+              <div
+                id="loading-bar"
+                class="bg-[#EF3340] w-[399px] h-[12px] rounded-3xl"
+              ></div>
+            </div>
+          </div>
+
+          <div
+            class="pl-[48px] pr-[48px] pt-[14px] flex justify-between m-[12px]"
+          >
+            <div class="text-[#C4A2AB] text-[10px]">
+              PREPARING YOUR EXPERIENCE
+            </div>
+            <div class="text-[#C4A2AB] text-[10px]">JUST A MOMENT</div>
+          </div>
+
+          <div
+            class="bg-[#1E0C13] h-14 flex justify-center items-center mt-auto w-full overflow-hidden"
+          >
+            <div class="text-[#C4A2AB] text-[12px]">
+              → Your welcome page will open automatically.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
